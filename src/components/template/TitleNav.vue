@@ -8,11 +8,8 @@
             <h1>{{titleList[0].name}}</h1>
         </div>
         <div class="b-title">
-            <ul>
-                <li class="bodrderRed"><router-link to="/brand">公司介绍</router-link></li>
-                <li><router-link to="/brandstpry">品牌故事</router-link></li>
-                <li><router-link to="/brandmerit">品牌优势</router-link></li>
-                <li><router-link to="/companycontact">联系我们</router-link></li>
+            <ul> 
+                <li v-for="(na,index) in navs"><router-link :to="na.urlname">{{na.name}}</router-link></li>
             </ul>
         </div>
     </div>
@@ -21,9 +18,9 @@
 <script>
 export default {
   name: "TitleNav",
-  props: ["titleList"],
+  props: ["titleList","navs"],
   methods:{
-
+    
   }
 };
 </script>
@@ -34,6 +31,7 @@ export default {
   padding: 30px 0 35px;
   border-bottom: 1px solid #c8c8c8;
   text-align: center;
+  margin: 0 auto;
 }
 .title_nav h1 {
   line-height: 34px;
@@ -48,6 +46,9 @@ export default {
 }
 .b-title ul{
     width: 970px;
+    -webkit-display:flex;
+    display: flex;
+    justify-content: center;
     text-align: center;
     overflow: hidden;
     margin: 0 auto; 
@@ -58,13 +59,9 @@ export default {
     height: 60px;
     line-height: 60px;
     font-size: 18px;
-    border-top:1px solid #c8c8c8;
-    border-bottom:1px solid #c8c8c8;
-    border-left:1px solid #c8c8c8;
+    border:1px solid #c8c8c8;
 }
-.b-title ul li:nth-child(4){
-    border-right:1px solid #c8c8c8;
-}
+
 .b-title ul li:hover{
     border:1px solid #b93936;
 }

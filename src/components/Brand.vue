@@ -1,6 +1,6 @@
 <template id="brand">
     <div>
-        <titleN v-bind:titleList="titleList"></titleN>
+        <title-n v-bind:titleList="titleList" v-bind:navs="navs"></title-n>
         <router-view></router-view>
     </div>
 </template>
@@ -11,11 +11,19 @@ export default {
   "/brand": "Brand",
   data() {
     return {
-     titleList:[{
+      titleList: [
+        {
           url: gongsibg,
           name: "公司介绍"
-      }]
-    }
+        }
+      ],
+      navs: [
+        { urlname: "/brand", name: "公司介绍" },
+        { urlname: "/brandstpry", name: "品牌故事" },
+        { urlname: "/brandmerit", name: "品牌优势" },
+        { urlname: "/companycontact", name: "联系我们" }
+      ]
+    };
   },
   components: {
     titleN: titleNav

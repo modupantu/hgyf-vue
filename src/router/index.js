@@ -9,6 +9,10 @@ import Company from '@/components/template/company/Company'
 import BrandMerit from '@/components/template/company/BrandMerit'
 import BrandStpry from '@/components/template/company/BrandStpry'
 import CompanyContact from '@/components/template/company/CompanyContact'
+import Product from '@/components/template/product/Product'
+import Shop from '@/components/template/product/Shop'
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -20,26 +24,35 @@ export default new Router({
     path: '/brand',
     component: Brand,
     children: [{
-        path: '/',
-        name: 'Company',
-        component: Company
-      }, {
-        path: '/companycontact',
-        name: 'CompanyContact',
-        component: CompanyContact
-      },{
-        path: '/brandmerit',
-        name: 'BrandMerit',
-        component: BrandMerit
-      }, {
-        path: '/brandstpry',
-        name: 'BrandStpry',
-        component: BrandStpry
-      }]
+      path: '/',
+      name: 'Company',
+      component: Company
+    }, {
+      path: '/companycontact',
+      name: 'CompanyContact',
+      component: CompanyContact
+    }, {
+      path: '/brandmerit',
+      name: 'BrandMerit',
+      component: BrandMerit
+    }, {
+      path: '/brandstpry',
+      name: 'BrandStpry',
+      component: BrandStpry
+    }]
   }, {
     path: '/about',
-    name: 'About',
-    component: About
+    component: About,
+    children: [{
+      path: '/',
+      name: 'Product',
+      component: Product
+    }, {
+      path: '/shop',
+      name: 'Shop',
+      component: Shop
+    }]
+
   }, {
     path: '/join',
     name: 'Join',
