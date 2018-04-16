@@ -9,7 +9,7 @@
         </div>
         <div class="b-title">
             <ul>
-                <li class="bodrderRed"><router-link to="/company">公司介绍</router-link></li>
+                <li class="bodrderRed"><router-link to="/brand">公司介绍</router-link></li>
                 <li><router-link to="/brandstpry">品牌故事</router-link></li>
                 <li><router-link to="/brandmerit">品牌优势</router-link></li>
                 <li><router-link to="/companycontact">联系我们</router-link></li>
