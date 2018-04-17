@@ -172,7 +172,7 @@ a {
   margin: 35px 0 0;
 }
 .nav li > a:hover {
-  background: #b93936;
+  background: #D61F6D;
 }
 .footer {
   width: 100%;
@@ -187,7 +187,7 @@ a {
   height: 480px;
 }
 .footer_cont > h2 {
-  color: #b93936;
+  color: #D61F6D;
   font-size: 30px;
   margin-bottom: 30px;
 }
@@ -208,7 +208,7 @@ a {
   margin-bottom: 3px;
 }
 .footer_cont > p > a:hover {
-  color: #b93936;
+  color: #D61F6D;
 }
 .footer_msg {
   float: right;
@@ -217,7 +217,7 @@ a {
   overflow: hidden;
 }
 .footer_msg > h2 {
-  color: #b93936;
+  color: #D61F6D;
   font-size: 30px;
   margin-bottom: 30px;
 }
@@ -234,7 +234,7 @@ a {
   width: 180px;
   margin: 0 0 15px 35px;
   float: left;
-  color: #b93936;
+  color: #D61F6D;
   position: relative;
 }
 .footer_msg .site{
@@ -244,7 +244,7 @@ a {
 .footer_msg .foot_btn{
   width:150px;
   margin: 0 0 15px 35px;
-  background: #b93936;
+  background: #D61F6D;
   color: white;
   border:none;
 }
@@ -254,7 +254,7 @@ a {
   background:  #8e8e8e;
 }
 .footer_msg .foot_btn:hover{
-  background: #b93936;
+  background: #D61F6D;
 }
 .footer_msg li i {
   font-style: normal;

@@ -36,7 +36,7 @@ export default {
 .title_nav h1 {
   line-height: 34px;
   font-size: 24px;
-  color: #b93936;
+  color: #D61F6D;
   margin-bottom: 5px;
 }
 .b-title{
@@ -63,7 +63,7 @@ export default {
 }
 
 .b-title ul li:hover{
-    border:1px solid #b93936;
+    border:1px solid #D61F6D;
 }
 .b-title ul li a{
     display: block;

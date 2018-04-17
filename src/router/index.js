@@ -11,6 +11,9 @@ import BrandStpry from '@/components/template/company/BrandStpry'
 import CompanyContact from '@/components/template/company/CompanyContact'
 import Product from '@/components/template/product/Product'
 import Shop from '@/components/template/product/Shop'
+import JoinAdvantage from '@/components/template/join/JoinAdvantage'
+import JoinFlow from '@/components/template/join/JoinFlow'
+
 
 
 Vue.use(Router)
@@ -52,11 +55,18 @@ export default new Router({
       name: 'Shop',
       component: Shop
     }]
-
   }, {
     path: '/join',
-    name: 'Join',
-    component: Join
+    component: Join,
+    children: [{
+      path: '/',
+      name: 'JoinFlow',
+      component: JoinFlow
+    }, {
+      path: '/joinadvantage',
+      name: 'JoinAdvantage',
+      component: JoinAdvantage
+    }]
   }, {
     path: '/news',
     name: 'News',

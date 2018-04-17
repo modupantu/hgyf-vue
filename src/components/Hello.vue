@@ -143,7 +143,7 @@ export default {
 .join_type {
   width: 100%;
   height: 171px;
-  background: #b93936;
+  background: #D61F6D;
   overflow: hidden;
 }
 .join_type ul {

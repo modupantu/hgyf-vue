@@ -5,14 +5,14 @@
            <div class="Cp-logo">
                <img :src="img[0].img" alt="logo">
            </div>
-           <h2>“禾谷鱼粉”是由禾谷鱼粉商贸有限公司创立的，面向全国打造的一个餐饮品牌，是专业的餐饮合作服务商。</h2>
+           <h2>“禾谷鱼粉”是由北京禾谷鱼粉商贸有限公司创立的，面向全国打造的一个餐饮品牌，是专业的餐饮合作服务商。</h2>
             <img :src="img[1].img" alt="bgimg">
-            <div class="Cp-gongSi">禾谷鱼粉商贸有限公司成立于2010年，总部位于上海，主要经营米线系列产品和地方特色小吃。
-在米线行业内率先导入CIS形象识别系统，贯彻HACCP安全卫生系统。以弘扬中华美食文化与推动中国快餐为使命。</div>
+            <div class="Cp-gongSi">授人以鱼&ensp;&ensp;不如授之以渔</div>
+            <div class="CP-miaoshu">集团总部位于首都北京在广安路9号国投财富广场,公司办公拥有500平米国际化办公环境,坐拥2000平米全方位服务物流配送中心,近年来公司整合国内顶尖的原料生产厂家,拥有自己的实体工厂,保证产品的安全、健康的营养以及新鲜的原料。同时全面了解市场的需求，不断创新产品的技术与口感，确保了每个产品都能受到消费者的认可。</div>
             <div class="Cp-video"></div>
             <div class="Cp-miaoshu">
-                <p>公司瞄准中高端餐饮市场，现已启动全国市场，已在广州、武汉、杭州、成都等地设立分公司直营门店，以上海为中心向全国辐射的商业拓展模式。</p>
-                <p>大鼓米线发挥口味特色优势，依托雄厚的资金实力，先进的经营管理，领先的研发能力敏锐把握市场脉搏，坚持走品牌战略。以优质的服务和高雅时尚的餐厅环境，为消费者提供健康、快捷、符合现代生活形态的快餐美食。</p>
+                <p>北京禾谷鱼粉商贸有限公司成立于2013年，总部设立于哈尔滨与北京，主要经营鱼粉系列产品，公司始终秉承着“将最优质的产品提供给消费者，将最专业的服务提供给客户”的追求理念，随着禾谷鱼粉公司的不断扩展以及品牌的晋升，在2013年公司已经为集团产业、投资管理、连锁营运以及品牌管理于一体的多元化企业。</p>
+                <p>禾谷鱼粉发挥口味特色优势，依托雄厚的资金实力，先进的经营管理，领先的研发能力敏锐把握市场脉搏，坚持走品牌战略。以优质的服务和高雅时尚的餐厅环境，为消费者提供健康、快捷、符合现代生活形态的快餐美食。</p>
             </div>
         </div>
     </div>
@@ -32,10 +32,9 @@ export default {
 <style scoped>
 .Cp-content {
   width: 1240px;
-  height: 1200px;
-  background: pink;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
 }
 .Cp-logo {
   margin-bottom: 15px;
@@ -46,12 +45,20 @@ export default {
   margin-bottom: 35px;
 }
 .Cp-gongSi {
-  color: #333;
+  color: #D61F6D;
   width: 930px;
   margin: 50px auto 70px;
+  font-size: 30px;
+  line-height: 30px;
+  text-indent: 80px;
+}
+.CP-miaoshu{
+  text-align: left;
+  text-indent: 2em;
   font-size: 15px;
   line-height: 32px;
-  text-indent: 80px;
+  margin:0 auto 30px auto;
+  width: 960px;
 }
 .Cp-video {
   float: left;

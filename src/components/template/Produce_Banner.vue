@@ -62,7 +62,7 @@ export default {
  
 }
 .produce_title:hover{
-  color:#b93936;
+  color:#D61F6D;
 }
 .swiper-slide:hover{
   background-size:1000px 500px; 

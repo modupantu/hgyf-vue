@@ -57,6 +57,6 @@ export default {
   width: 30px;
   height: 30px;
   display: inline-block;
-  background: #7c5e53;
+  background: #D61F6D;
 }
 </style>
