@@ -1,16 +1,15 @@
 <template>
 <div>
     <div class="container">
-        <h2 ><b>【邀请函】</b>{{a[0].title}}</h2>    
+        <h2 ><b>【喜贺】</b>{{a[0].title}}</h2>    
         <div class="conk">
             <span>作者：admin</span>
             <span>时间：{{a[0].time}}</span>
             <span>来源：北京禾谷鱼粉商贸有限公司</span>    
         </div>
         <div class="content">
-            <p>{{a[0].content}}</p>
+            <p>禾谷鱼粉将在3.4-3.6日在沈阳特许连锁加盟展览会参展，我们致力于打造成为最佳的米线餐饮连锁品牌，为更多加盟投资者实现财富梦想！</p>
             <p>展会时间：{{a[0].zhtime}}</p>
-            <p>地点：{{a[0].dizhi}}</p>
             <p>加盟电话：{{a[0].tel}}</p>
             <p>{{a[0].tuiguang}}</p>
             <div class="imgShow">
@@ -24,22 +23,21 @@
 <script>
 import new1jpg from "@/assets/new/news_02.jpg";
 export default {
-  "/newshow": "NewShow",
+  "/newshowa": "NewShoA",
   data() {
     return {
       a: [
         {
           url: new1jpg,
-          title: "禾谷渔粉邀请您参加第二十届中国(北京)特许加盟大会暨展览会",
+          title: "禾谷渔粉沈阳餐饮加盟展圆满落幕",
           time: "2018-5-19",
-          zhtime:"2018-05-04到2018-05-06",
+          zhtime:"2018-04-13到2018-04-15",
           content:
-            "禾谷鱼粉将在2018-5-4日到2018-5-6日在北京特许加盟展览会参展，我们致力于打造成为最佳的鱼粉餐饮连锁品牌，为更多加盟投资者实现财富梦想！",
+            "北京禾谷鱼粉商贸有限公司成立于2013年，总部位于北京，主要经营渔粉，小吃系列产品。",
           content2:
             "北京禾谷鱼粉商贸有限公司成立于2013年，总部位于北京，主要经营渔粉，小吃系列产品。在米线行业内率先导入CIS形象识别系统，贯彻HACCP安全卫生系统。禾谷鱼粉发挥口味特色优势，依托雄厚的资金实力，先进的经营管理，领先的研发能力敏锐把握市场脉搏，坚持走品牌战略。禾谷鱼粉已经成为中国最受消费者青眯的快餐品牌之一，也是中国餐饮行业的一颗闪耀的新星。 ",
           tuiguang: "选择禾谷鱼粉，相信品牌的力量，和禾谷一起丰收鱼粉财富！！！",
-          tel:"400-628-1577",
-          dizhi:'北京国家会议中心'
+          tel:"400-628-1577"
         }
       ]
     };
@@ -68,7 +66,7 @@ h2 {
   margin: 60px auto 10px;
 }
 h2 b{
-    color:#d61f6d;
+  color:#d61f6d;
 }
 .content p {
   color: #464646;

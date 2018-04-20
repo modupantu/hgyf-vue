@@ -6,7 +6,7 @@
             <h3>{{str.title}}</h3>
             <small>时间:{{str.time}}</small>
             <p v-text="str.content"></p>
-            <router-link :to="{path:'/newshow',query:{id:str.id}}">阅读</router-link>
+            <router-link :to="{path:str.upath}">阅读</router-link> 
         </div>
     </div>
 </div>
@@ -19,30 +19,23 @@ export default {
     return {
       imgList: [
         {
-          id: 1,
+          id: "b",
+          upath: "/newshow",
           url: new1jpg,
-          title: "【邀请函】禾谷渔粉邀请您参加第94届沈阳餐饮加盟展",
-          time: "2018-5-19",
+          title:
+            "【邀请函】禾谷渔粉邀请您参加第二十届中国(北京)特许加盟大会暨展览会",
+          time: "2018-05-04",
+          content: "展会地点  北京国家会议中心"
+        },
+         {
+          id: "a",
+          upath: "/newshowa",
+          url: new1jpg,
+          title: "【喜贺】禾谷渔粉沈阳餐饮加盟展圆满落幕",
+          time: "2018-04-13",
           content:
             "北京禾谷鱼粉商贸有限公司成立于2013年，总部位于北京，主要经营渔粉，小吃系列产品。"
-        },
-        {
-          id: 2,
-          url: new1jpg,
-          title: "【邀请函】禾谷渔粉邀请您参加第二十届中国(北京)特许加盟大会暨展览会",
-          time: "2018-5-04",
-          content:
-            "展会地点  北京国家会议中心"
-        },
-        {
-          id: 3,
-          url: new1jpg,
-          title: "【邀请函】禾谷渔粉邀请您参加第94届沈阳餐饮加盟展",
-          time: "2018-4-18",
-          content:
-            "北京禾谷鱼粉商贸有限公司成立于2013年，总部位于北京，主要经营渔粉，小吃系列产品。"
-        }
-      ]
+        }]
     };
   }
 };
@@ -57,6 +50,7 @@ export default {
   width: 600px;
   height: 200px;
   margin: 40px 20px;
+  position: relative;
 }
 .container .joinList img {
   float: left;
@@ -84,6 +78,9 @@ export default {
   overflow: hidden;
 }
 .content a {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
   display: block;
   width: 50px;
   height: 26px;
@@ -94,8 +91,9 @@ export default {
   color: #fff;
   background: #d61f6d;
   margin-left: 300px;
+  z-index: 10;
 }
-.content a:hover{
-    color:#ddd;
+.content a:hover {
+  color: #ddd;
 }
 </style>
