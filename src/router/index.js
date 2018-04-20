@@ -13,8 +13,8 @@ import Product from '@/components/template/product/Product'
 import Shop from '@/components/template/product/Shop'
 import JoinAdvantage from '@/components/template/join/JoinAdvantage'
 import JoinFlow from '@/components/template/join/JoinFlow'
-
-
+import NewShow from '@/components/template/NewShow'
+import NewList from '@/components/template/NewList'
 
 Vue.use(Router)
 
@@ -69,7 +69,15 @@ export default new Router({
     }]
   }, {
     path: '/news',
-    name: 'News',
-    component: News
+    component: News,
+    children:[{
+      path:'/',
+      name: 'NewList',
+      component: NewList
+    },{
+      path:'/newshow',
+      name:'NewShow',
+      component: NewShow
+    }]
   }]
 })

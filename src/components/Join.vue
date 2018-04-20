@@ -30,4 +30,9 @@ export default {
   }
 };
 </script>
+<style scoped>
+div{
+    overflow: hidden;
+}
+</style>
 

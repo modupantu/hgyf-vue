@@ -18,10 +18,7 @@
 <script>
 export default {
   name: "TitleNav",
-  props: ["titleList","navs"],
-  methods:{
-    
-  }
+  props: ["titleList","navs"]
 };
 </script>
 

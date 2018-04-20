@@ -117,7 +117,6 @@ a {
   clear: both;
   visibility: hidden;
 }
-
 .clear {
   display: inline-block;
 } /* for IE/Mac */
