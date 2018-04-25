@@ -2,7 +2,7 @@
   <div id="app">
     <div class="header">
       <div class="container">
-        <div class="logo"><img src="./assets/logo.png" alt="logo"></div>
+        <div class="logo"><img src="./assets/logo.jpg" alt="logo"></div>
         <ul class="nav">
           <!--使用指令v-link进行导航-->
           <li class="list"><router-link to="/">首页</router-link></li>

@@ -5,7 +5,7 @@
     </div>
 </template>
 <script>
-import gongsibg from "@/assets/about01_banner.jpg";
+import product_bg from "@/assets/product_bg.jpg";
 import titleNav from "./template/TitleNav.vue";
 import product from "./template/product/Product.vue";
 export default {
@@ -14,7 +14,7 @@ export default {
     return {
       titleList: [
         {
-          url: gongsibg,
+          url: product_bg,
           name: "产品展示"
         }
       ],

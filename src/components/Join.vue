@@ -7,7 +7,7 @@
     </div>
 </template>
 <script>
-import gongsibg from "@/assets/about01_banner.jpg";
+import join_bg from "@/assets/join_bg.jpg";
 import titleNav from "./template/TitleNav.vue";
 export default {
   "/join": "Join",
@@ -15,7 +15,7 @@ export default {
     return {
       titleList: [
         {
-          url: gongsibg,
+          url: join_bg,
           name: "加盟流程"
         }
       ],
