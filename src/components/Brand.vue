@@ -6,14 +6,14 @@
 </template>
 <script>
 import titleNav from "./template/TitleNav.vue";
-import gongsibg from "@/assets/about01_banner.jpg";
+import binder from "@/assets/binder.jpg";
 export default {
   "/brand": "Brand",
   data() {
     return {
       titleList: [
         {
-          url: gongsibg,
+          url: binder,
           name: "公司介绍"
         }
       ],

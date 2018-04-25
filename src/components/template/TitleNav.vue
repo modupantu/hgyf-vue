@@ -1,7 +1,7 @@
 <template>
 <div>
     <div>
-        <div>
+        <div class="b-bg">
             <img :src="titleList[0].url" alt="">
         </div>
         <div class="title_nav">
@@ -40,6 +40,9 @@ export default {
     width: 100%;
     margin: 70px auto 40px auto;
     border-left: 1px solid #c8c8c8;
+}
+.b-bg img{
+    width: 100%;
 }
 .b-title ul{
     width: 970px;

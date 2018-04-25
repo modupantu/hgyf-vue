@@ -1,19 +1,28 @@
 <template>
     <div class="j-flow">
-        <p>加盟流程</p>
-        <img src="" alt="">
+        <img :src="joinImg[0].url" alt="">
     </div>
 </template>
 <script>
+import joinLiuCheng from "@/assets/home_flow.jpg";
 export default {
-  "/joinFlow": "JoinFlow"
+  "/joinFlow": "JoinFlow",
+  data(){
+      return{
+          joinImg:[{url:joinLiuCheng}]
+      }
+  }
 };
 </script>
 <style scoped>
 .j-flow{
     width: 1240px;
-    height: 200px;
-    margin: 0 auto;
-    background: red;
+    margin: 50px auto;
+    background: #FFF;
+    overflow: hidden;
 }
+.j-flow img{
+    width: 1240px;
+}
+
 </style>

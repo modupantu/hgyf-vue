@@ -8,7 +8,7 @@
 </template>
 <script>
 import new1jpg from "@/assets/new/news_02.jpg";
-import gongsibg from "@/assets/about01_banner.jpg";
+import news from "@/assets/news.jpg";
 import titleNav from "./template/TitleNav";
 export default {
   "/news": "News",
@@ -16,7 +16,7 @@ export default {
     return {
       titleList: [
         {
-          url: gongsibg,
+          url: news,
           name: "新闻中心"
         }
       ]
