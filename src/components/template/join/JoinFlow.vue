@@ -4,7 +4,7 @@
     </div>
 </template>
 <script>
-import joinLiuCheng from "@/assets/home_flow.jpg";
+import joinLiuCheng from "@/assets/home_flow1.jpg";
 export default {
   "/joinFlow": "JoinFlow",
   data(){

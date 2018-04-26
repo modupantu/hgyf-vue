@@ -6,10 +6,25 @@
         <ul class="nav">
           <!--使用指令v-link进行导航-->
           <li class="list"><router-link to="/">首页</router-link></li>
-          <li class="list"><router-link to="/brand">品牌介绍</router-link></li>
-          <li class="list"><router-link to="/about">产品展示</router-link></li>
-          <li class="list"><router-link to="/join">加盟流程</router-link></li>
+          <li class="list"><router-link to="/brand">品牌介绍</router-link>
+            <ul class="childNav">
+              <li><router-link to="/brandstpry">品牌故事</router-link></li>
+              <li><router-link to="/brandmerit">品牌优势</router-link></li>
+              <li><router-link to="/companycontact">联系我们</router-link></li>
+            </ul>
+          </li>
+          <li class="list"><router-link to="/about">产品展示</router-link>
+            <ul class="childNav">
+              <li><router-link to="/shop">店铺展示</router-link></li>
+            </ul>
+          </li>
+          <li class="list"><router-link to="/join">加盟流程</router-link>
+            <ul class="childNav">
+              <li><router-link to="/joinAdvantage">加盟优势</router-link></li>
+            </ul>
+          </li>
           <li class="list"><router-link to="/news">新闻中心</router-link></li>
+          <li class="list"></li>
         </ul>
       </div>
     </div>
@@ -23,11 +38,16 @@
         <p class="tel">咨询热线：400-628-1577</p>
         <p class="site">企业地址：北京市丰台区国投财富广场2号楼1013</p>
         <p class="link">友情链接：</p>
-        <div>
-
+        <div class="erweima">
+          <div class="ftwechat">
+            <img src="./assets/wechat.png" alt="wechat">
+          </div>
+          <div class="ftname">
+            <p class="ftname1">关注微信了解最新咨询</p>
+          </div>
         </div> 
-        <p class="Copyright">Copyright ©京ICP备17061601号-1 北京禾谷鱼粉商贸有限公司 版权所有 <a href="">公司位置</a></p>
-       
+        <a href="http://u5074526.viewer.maka.im/k/R8TS341O" class="shouce">加盟手册</a>
+        <p class="Copyright">Copyright ©京ICP备17061601号-1 北京禾谷鱼粉商贸有限公司 版权所有 <a href="https://yuntu.amap.com/share/Bri6vy">公司位置</a></p>
       </div>
       <div class="footer_msg">
         <h2>加盟留言<small>/JOIN MESSAGE</small></h2>
@@ -145,14 +165,14 @@ a {
   margin-left: 10px;
   float: left;
 }
-.nav li {
+.nav .list {
   float: left;
   text-align: center;
-  width: 16.66666667%;
+  width: 16.6%;
   height: 90px;
   position: relative;
 }
-.nav li:after {
+.nav .list:after {
   content: "";
   position: absolute;
   right: 0;
@@ -161,7 +181,7 @@ a {
   height: 14px;
   border-right: 1px dotted #ccc;
 }
-.nav li > a {
+.nav .list > a {
   font-size: 16px;
   color: #333;
   height: 24px;
@@ -170,8 +190,39 @@ a {
   padding: 0 18px;
   margin: 35px 0 0;
 }
-.nav li > a:hover {
+.nav .list:hover .childNav {
+  display: block;
+}
+.nav .list > a:hover {
   background: #D61F6D;
+}
+
+.childNav{
+   position: absolute;
+   z-index: 100;
+   top:90px;
+   display: none;
+   width: 100%;
+   background: #D61F6D;
+   
+}
+.childNav li{
+  width: 100%;
+  height: 24px;
+  padding:12px 0;
+  
+}
+.childNav li a{
+  font-size: 16px;
+  color: #FFF;
+  height: 24px;
+  line-height: 23px;
+  display: inline-block;
+  padding: 0 18px;
+  border-bottom: 1px dotted #ccc;
+}
+.childNav li > a:hover {
+  color: #AAA;
 }
 .footer {
   width: 100%;
@@ -208,6 +259,37 @@ a {
 }
 .footer_cont > p > a:hover {
   color: #D61F6D;
+}
+.erweima{
+    width: 100%;
+    margin: 20px 0;
+    height: 150px;
+    overflow: hidden;
+}
+.ftwechat{
+  float: left;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.ftwechat img{
+  width: 150px;
+}
+.ftname{
+  float: left;
+  width: 150px;
+  margin: 0 10px;
+}
+.ftname p{
+  float: left;
+ line-height: 150px;
+}
+.shouce{
+  margin: 30px 0;
+  color:#AAA;
+}
+.shouce:hover{
+  color:#D61F6D;
 }
 .footer_msg {
   float: right;
@@ -250,7 +332,7 @@ a {
 
 .footer_msg .foot_btn:last-child{
   color: white;
-  background:  #8e8e8e;
+  background: #8e8e8e;
 }
 .footer_msg .foot_btn:hover{
   background: #D61F6D;
