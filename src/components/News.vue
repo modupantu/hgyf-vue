@@ -7,7 +7,7 @@
     </div>
 </template>
 <script>
-import new1jpg from "@/assets/new/news_02.jpg";
+import new1jpg from "@/assets/new/news_02.png";
 import news from "@/assets/news.jpg";
 import titleNav from "./template/TitleNav";
 export default {

@@ -22,7 +22,7 @@
 import imgLogo from "@/assets/home_logo.png";
 import brand1 from "@/assets/brand1.jpg";
 import brand2 from "@/assets/brand2.jpg";
-import BGimg from "@/assets/7f.jpg";
+import BGimg from "@/assets/7f.png";
 export default {
   name: "Company",
   data() {

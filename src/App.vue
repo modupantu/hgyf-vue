@@ -50,7 +50,8 @@
         <p class="Copyright">Copyright ©京ICP备17061601号-1 北京禾谷鱼粉商贸有限公司 版权所有 <a href="https://yuntu.amap.com/share/Bri6vy">公司位置</a></p>
       </div>
       <div class="footer_msg">
-        <h2>加盟留言<small>/JOIN MESSAGE</small></h2>
+        <iframe height="490" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="http://xianguosh.mikecrm.com/gGfeUEh"></iframe>
+        <!-- <h2>加盟留言<small>/JOIN MESSAGE</small></h2>
         <form action="" method="post">
           <ul>
             <li><i>*</i><input name="name"  id="name" type="text" placeholder="您的姓名"></li>
@@ -61,7 +62,7 @@
           </ul>
           <input type="submit" class="foot_btn" value="在线提交">
           <input type="reset" class="foot_btn" value="重置">
-        </form>
+        </form> -->
       </div>
       </div>
     </div>
@@ -294,7 +295,7 @@ a {
 .footer_msg {
   float: right;
   width: 580px;
-  height: 350px;
+  height: 460px;
   overflow: hidden;
 }
 .footer_msg > h2 {

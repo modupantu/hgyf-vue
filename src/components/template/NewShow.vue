@@ -14,22 +14,29 @@
             <p>加盟电话：{{a[0].tel}}</p>
             <p>{{a[0].tuiguang}}</p>
             <div class="imgShow">
-                <img :src="a[0].url" alt="">
-                <img :src="a[0].url" alt="">
+                <div class="imgone">
+                  <img :src="a[0].url" alt="">
+                </div>
+                <div class="imgtwo">
+                  <img :src="a[0].url2" alt="">
+                </div>
             </div>
         </div>
     </div>
 </div>
 </template>
 <script>
-import new1jpg from "@/assets/new/news_02.jpg";
+import new1jpg from "@/assets/new/news_02.png";
+import new1 from "@/assets/new/new1.jpg";
+import brand2 from "@/assets/new/brand2.jpg";
 export default {
   "/newshow": "NewShow",
   data() {
     return {
       a: [
         {
-          url: new1jpg,
+          url: new1,
+          url2: brand2,
           title: "禾谷渔粉邀请您参加第二十届中国(北京)特许加盟大会暨展览会",
           time: "2018-5-19",
           zhtime:"2018-05-04到2018-05-06",
@@ -76,6 +83,18 @@ h2 b{
   line-height: 30px;
   text-indent: 2em;
   margin-bottom: 25px;
+}
+.imgShow{
+ display: flex;
+ width: 980px;
+}
+.imgShow .imgone{
+  width: 490px;
+  background: #FFF;
+}
+.imgShow .imgtwo{
+  width: 490px;
+  background: #FFF;
 }
 </style>
 

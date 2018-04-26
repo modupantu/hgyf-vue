@@ -13,22 +13,28 @@
             <p>加盟电话：{{a[0].tel}}</p>
             <p>{{a[0].tuiguang}}</p>
             <div class="imgShow">
-                <img :src="a[0].url" alt="">
-                <img :src="a[0].url" alt="">
+               <div class="imgone">
+                  <img :src="a[0].url" alt="">
+                </div>
+                <div class="imgtwo">
+                  <img :src="a[0].url2" alt="">
+                </div>
             </div>
         </div>
     </div>
 </div>
 </template>
 <script>
-import new1jpg from "@/assets/new/news_02.jpg";
+import new1 from "@/assets/new/new1.jpg";
+import brand2 from "@/assets/new/brand2.jpg";
 export default {
   "/newshowa": "NewShoA",
   data() {
     return {
       a: [
         {
-          url: new1jpg,
+          url: new1,
+          url2: brand2,
           title: "禾谷渔粉沈阳餐饮加盟展圆满落幕",
           time: "2018-5-19",
           zhtime:"2018-04-13到2018-04-15",
@@ -74,6 +80,20 @@ h2 b{
   line-height: 30px;
   text-indent: 2em;
   margin-bottom: 25px;
+}
+.imgShow{
+ display: flex;
+ width: 980px;
+}
+.imgShow .imgone{
+  width: 490px;
+  background: #FFF;
+  overflow: hidden;
+}
+.imgShow .imgtwo{
+  width: 490px;
+  background: #FFF;
+  overflow: hidden;
 }
 </style>
 

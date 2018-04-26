@@ -12,7 +12,7 @@
 </div>
 </template>
 <script>
-import new1jpg from "@/assets/new/news_02.jpg";
+import new1jpg from "@/assets/new/news_02.png";
 export default {
   "/newlist": "NewList",
   data() {
