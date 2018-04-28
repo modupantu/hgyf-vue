@@ -26,9 +26,9 @@
 </div>
 </template>
 <script>
-import new1jpg from "@/assets/new/news_02.png";
-import new1 from "@/assets/new/new1.jpg";
-import brand2 from "@/assets/new/brand2.jpg";
+
+import new1 from "@/assets/new/bj1.jpg";
+import brand2 from "@/assets/new/bj2.jpg";
 export default {
   "/newshow": "NewShow",
   data() {

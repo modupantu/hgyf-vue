@@ -84,7 +84,7 @@ export default {
       autoplay: {
         delay: 3000
       },
-      slidesPerView: 4, //显示几个
+      slidesPerView: 6, //显示几个
       spaceBetween: 1, //间距
       loop: true,
       speed: 1000,
@@ -113,7 +113,7 @@ export default {
 <style scoped>
 .swiper-container {
   width: 100%;
-  height: 100%;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
 }
